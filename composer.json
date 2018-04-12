@@ -41,7 +41,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "NotificationChannels\\Tww\\TwwProvider"
+                "NotificationChannels\\Tww\\TwwServiceProvider"
             ]
         }
     }

@@ -4,7 +4,7 @@ namespace NotificationChannels\Tww;
 
 use Illuminate\Support\ServiceProvider;
 
-class TwwServiceProvider extends TwwProvider
+class TwwServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
