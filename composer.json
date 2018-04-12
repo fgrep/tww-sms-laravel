@@ -1,6 +1,6 @@
 {
     "name": "fgrep/tww-sms-laravel",
-    "description": "Laravel Notification Channel for TWW SMS",
+    "description": "TWW SMS Notification Channel for Laravel",
     "homepage": "https://github.com/fgrep/tww-sms-laravel",
     "license": "MIT",
     "authors": [
