@@ -15,11 +15,11 @@ class CouldNotSendNotification extends \Exception
      */
     public static function serviceRespondedWithAnError(ClientException $exception)
     {
-        $statusCode  = $exception->getResponse()->getStatusCode();
+        $statusCode  = $exception->getCode();
         $description = 'no description given';
 
-        if ($result = json_decode($exception->getResponse()->getBody())) {
-            $description = $result->description ?: $description;
+        if ($result = $exception->getMessage()) {
+            $description = $result ?: $description;
         }
 
         return new static("Tww responded with an error `{$statusCode} - {$description}`");

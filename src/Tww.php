@@ -76,7 +76,7 @@ class Tww
                 'Mensagem' => Str::limit($params['msg'], 160),
             ]);
 
-        } catch (ClientException $exception) {
+        } catch (\SoapFault $exception) {
             throw CouldNotSendNotification::serviceRespondedWithAnError($exception);
         } catch (\Exception $exception) {
             throw CouldNotSendNotification::couldNotCommunicateWithTww($exception->getMessage());
